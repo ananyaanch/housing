@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StayFinder
 
-## Getting Started
+An off-campus housing marketplace built specifically for UNC Chapel Hill students. StayFinder requires domain-based student verification and property ownership checks to filter out the scams and noise common in local social media groups.
 
-First, run the development server:
+*Disclaimer: StayFinder is an independent project and is not affiliated with, sponsored by, or endorsed by the University of North Carolina at Chapel Hill.*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
+- **Database & Auth (Upcoming):** Supabase
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Design System
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Built with a custom UI kit and responsive layouts.
 
-## Learn More
+- **Primary Action (Coral):** `#ff6047` (Hover: `#E95239`)
+- **Background (Warm Off-White):** `#f0eee9`
+- **Typography:** Plus Jakarta Sans (Headers), Inter (Body)
+- **Layouts:** Mobile-first stacking, expanding to split-screens and sticky sidebars on desktop breakpoints.
 
-To learn more about Next.js, take a look at the following resources:
+## Development Roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [x] **Phase 1: Design System.** Set up color variables, typography, and base UI components.
+- [x] **Phase 2: Static Skeleton.** Build the responsive global navigation and the dual-screen marketplace feed.
+- [ ] **Phase 3: Database Architecture.** Structure PostgreSQL tables for users, listings, and messages.
+- [ ] **Phase 4: Authentication.** Implement `@ad.unc.edu` / `@live.unc.edu` domain restrictions and age verification.
+- [ ] **Phase 5: Messaging.** Build the split-pane chat interface and connect to Supabase real-time listeners.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Local Setup
 
-## Deploy on Vercel
+To run this project locally:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/yourusername/unc-housing.git](https://github.com/yourusername/unc-housing.git)
+   cd unc-housing
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the development server:
+   ```bash
+   npm run dev
+Open http://localhost:3000 in your browser to test/view the project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   
